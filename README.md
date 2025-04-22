@@ -4,6 +4,10 @@
 
 A platform for sharing and discovering theories and papers in any field, featuring a black and white paintbrush theme with typewriter-style text.
 
+<img width="1501" alt="Screenshot 2025-04-21 at 8 58 18 PM" src="https://github.com/user-attachments/assets/ab2141d3-7965-434e-a558-5d447d4fa733" />
+
+<img width="1488" alt="Screenshot 2025-04-21 at 8 59 17 PM" src="https://github.com/user-attachments/assets/bbf3c6a7-bb86-4014-90bd-dbf190c4d73b" />
+
 ## Features
 
 - **User Authentication**: Register, login, and manage your profile
@@ -63,6 +67,3 @@ The application is deployed at: https://lzkzkxzn.manus.space
 - `migrations`: Database schema and sample data
 - `public`: Static assets including paintbrush SVGs
 
-## License
-
-This project is for demonstration purposes.
