@@ -1,0 +1,189 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+/* Black and white paintbrush theme with typewriter-style text */
+body {
+  font-family: 'Space Mono', monospace;
+  background-color: white;
+  color: black;
+}
+
+/* Paintbrush stroke background elements */
+.paintbrush-stroke {
+  position: absolute;
+  opacity: 0.1;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.paintbrush-stroke-1 {
+  top: 10%;
+  left: 5%;
+  transform: rotate(15deg);
+}
+
+.paintbrush-stroke-2 {
+  bottom: 15%;
+  right: 8%;
+  transform: rotate(-20deg);
+}
+
+.paintbrush-stroke-3 {
+  top: 40%;
+  right: 15%;
+  transform: rotate(45deg);
+}
+
+.paintbrush-stroke-4 {
+  bottom: 30%;
+  left: 10%;
+  transform: rotate(-10deg);
+}
+
+/* Typewriter-style text (boxy like Nothing phone) */
+.typewriter-text {
+  font-family: 'Space Mono', monospace;
+  letter-spacing: -0.03em;
+  line-height: 1.4;
+}
+
+/* Custom button styles */
+.btn-primary {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 0.5rem 1.5rem;
+  font-family: 'Space Mono', monospace;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  padding: 0.5rem 1.5rem;
+  font-family: 'Space Mono', monospace;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: black;
+  color: white;
+}
+
+/* Card styles for papers/theories */
+.theory-card {
+  border: 2px solid black;
+  background-color: white;
+  padding: 1.5rem;
+  transition: all 0.2s ease;
+}
+
+.theory-card:hover {
+  box-shadow: 8px 8px 0px rgba(0, 0, 0, 0.8);
+  transform: translate(-4px, -4px);
+}
+
+/* Navigation and header styles */
+.main-header {
+  border-bottom: 2px solid black;
+}
+
+.search-bar {
+  border: 2px solid black;
+  background-color: white;
+  font-family: 'Space Mono', monospace;
+}
+
+/* Profile elements */
+.profile-avatar {
+  border: 3px solid black;
+}
+
+.follow-button {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  font-family: 'Space Mono', monospace;
+  transition: all 0.2s ease;
+}
+
+.follow-button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Message elements */
+.message-container {
+  border: 2px solid black;
+  background-color: white;
+}
+
+.message-input {
+  border: 2px solid black;
+  font-family: 'Space Mono', monospace;
+}
+
+@layer base {
+  :root {
+    --radius: 0;
+    --background: 0 0% 100%;
+    --foreground: 0 0% 0%;
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 0%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 0%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 96%;
+    --secondary-foreground: 0 0% 0%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 0 0% 45%;
+    --accent: 0 0% 96%;
+    --accent-foreground: 0 0% 0%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 0%;
+    --input: 0 0% 0%;
+    --ring: 0 0% 0%;
+  }
+  
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 0%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 0%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 0% 100%;
+    --primary-foreground: 0 0% 0%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+    --accent: 0 0% 15%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 100%;
+    --input: 0 0% 100%;
+    --ring: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
