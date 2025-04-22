@@ -1,4 +1,5 @@
-# Theory Papers
+<img width="451" alt="Screenshot 2025-04-21 at 8 58 48 PM" src="https://github.com/user-attachments/assets/7f3fa64a-d5d8-4109-b254-64d8dbb9f85d" />
+
 
 A platform for sharing and discovering theories and papers in any field, featuring a black and white paintbrush theme with typewriter-style text.
 
